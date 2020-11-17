@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_AzureBotCar",
+  "recognizers": {
+    "en-us": "AzureBotCar.en-us.lu",
+    "": "AzureBotCar.en-us.lu"
+  }
+}

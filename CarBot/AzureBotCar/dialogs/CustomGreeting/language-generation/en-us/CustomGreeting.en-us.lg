@@ -1,0 +1,14 @@
+[import](common.lg)
+
+# SendActivity_iLAKiU()
+- Hello! I'm car bot. 
+# TextInput_Prompt_qLbrtp()
+- What is yout name?
+# SendActivity_Q69Vke()
+- Hi, ${user.name}! I can help you to choose car. 
+- Hello, ${user.name}! Let's choose car for you. 
+
+
+
+
+

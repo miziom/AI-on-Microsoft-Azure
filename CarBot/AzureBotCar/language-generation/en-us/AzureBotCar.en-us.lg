@@ -1,0 +1,109 @@
+[import](common.lg)
+
+
+# SendActivity_gUY8og()
+- Okay! Let's start! If you don't know what to do type "help"
+
+
+
+
+# SendActivity_MTdhcs()
+- You are looking for a sport car.
+# SendActivity_TLWkpV()
+- I'm sorry. I didn't understand that.
+- Please, try it other way
+- Unfortunately, I don't know what should I do. 
+
+
+
+
+
+# SendActivity_VIs3av()
+- Cancelling
+# SendActivity_tZyOm7()
+- You are looking for premium car
+# SendActivity_dEsvqw()
+- ${seeDecision(user.car)}
+
+# SendActivity_E6O8XL()
+- ```You have to describe some informations:
+        - Car type 
+        - Money you want to spend
+        - Min power
+        - Brand (optional)
+     After that I can try to find car model proposal -
+     type "find" or similar
+     You can also "check your decisions"
+        ```
+# NumberInput_Prompt_aT1P63()
+- How much do you want to spend?
+- How much money will you spend?
+- How much money do you have?
+
+
+
+
+
+
+# NumberInput_UnrecognizedPrompt_aT1P63()
+- Type only number, like '10000'
+# NumberInput_InvalidPrompt_aT1P63()
+- Type only number, like '10000'
+# SendActivity_KQ7in1()
+- Ok, you want to spend ${user.car.money} PLN for ${user.car.type} car
+- Awesome, you have ${user.car.money} PLN for ${user.car.type} car
+
+# NumberInput_Prompt_OFTXdS()
+- What should be the minimum power?
+# NumberInput_UnrecognizedPrompt_OFTXdS()
+- Type only number, like '150'
+# NumberInput_InvalidPrompt_OFTXdS()
+- Type horse power from 70 to 400
+# SendActivity_rzIusF()
+- Ok, you want min ${user.car.power} HP
+- Your decision: ${user.car.power} HP
+- Okey, you look for more powerful car than ${user.car.power} HP
+
+
+
+
+# TextInput_Prompt_p6a8Zn()
+- Have you thought of any car brand?
+# TextInput_UnrecognizedPrompt_p6a8Zn()
+- type yes/no
+# TextInput_InvalidPrompt_p6a8Zn()
+- type yes/no
+# SendActivity_ikaZp6()
+- Okey, co what brand are you looking for?
+# SendActivity_2eHxyZ()
+- Okey, Let's try find sth.
+# SendActivity_ceNPBu()
+- What car type are you looking for?
+# SendActivity_uch1cW()
+- You are looking for a Audi car.
+# SendActivity_9kiIoW()
+- You are looking for a BMW car.
+# SendActivity_DRmKYp()
+- You are looking for a Honda car.
+# SendActivity_c10g7R()
+- You are looking for a Ford car.
+# SendActivity_jTZrPy()
+- You are looking for a Nissan car.
+# SendActivity_uBGGmC()
+- You are looking for a Mercedes-Benz car.
+# SendActivity_dytKx1()
+- You are looking for a Lexus car.
+# SendActivity_hGdi2E()
+- You are looking for family car
+# SendActivity_bCWh4t()
+- ${user.name}! You welcome
+- No problem ${user.name}
+
+
+
+
+
+
+# SendActivity_73RWl9()
+- OK ${user.name}. I will help you
+- OK ${user.name}. I help you

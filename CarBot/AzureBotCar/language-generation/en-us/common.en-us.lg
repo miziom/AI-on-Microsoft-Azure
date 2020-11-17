@@ -1,0 +1,275 @@
+#checkCar(car)
+-IF: ${ car.type == "sport" && car.money >= 45000 && car.money <= 60000 && car.power <= 200 && car.brand =="NULL" }
+     - ```
+       My recommendation:
+        - CAR: BMW 528i 2013 
+        - Price: 45 000 PLN
+        - Power: 245 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Audi S3 2007
+        - Price: 35 000 PLN
+        - Power: 265 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Honda Civic Type R 2007
+        - Price: 30 000 PLN
+        - Power: 201 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 85000 && car.money <= 100000 && car.power <= 305 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Nissan 350Z 2008 
+        - Price: 65 000 PLN
+        - Power: 313 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Ford Mustang GTI 2015
+        - Price: 85 000 PLN
+        - Power: 305 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 140000 && car.money <= 169999 && car.power <= 410 && car.brand =="NULL" }
+     - ```
+       My recommendation:
+        - CAR: Ford Focus RS 2018
+        - Price: 130 000 PLN
+        - Power: 412 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 170000 && car.power <= 410 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Audi RS 4 2013
+        - Price: 170 000 PLN
+        - Power: 450 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 45000 && car.money <= 60000 && car.power <= 245 && car.brand == "BWM" }
+     - ```
+       My recommendation:
+        - CAR: BMW 528i 2013 
+        - Price: 45 000 PLN
+        - Power: 245 HP
+    ```
+ - ELSEIF: ${  car.type == "sport" && car.money >= 35000 && car.money <= 60000 && car.power <= 265 && car.brand == "AUDI" }
+     - ```
+       My recommendation:
+        - CAR: Audi S3 2007
+        - Price: 35 000 PLN
+        - Power: 265 HP
+    ```
+ - ELSEIF: ${  car.type == "sport" && car.money >= 30000 && car.money <= 60000 && car.power <= 200 && car.brand == "HONDA" }
+     - ```
+       My recommendation:
+        - CAR: Honda Civic Type R 2007
+        - Price: 30 000 PLN
+        - Power: 201 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 65000 && car.money <= 100000 && car.power <= 313 && car.brand =="NISSAN" }
+      - ```
+       My recommendation:
+        - CAR: Nissan 350Z 2008 
+        - Price: 65 000 PLN
+        - Power: 313 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 85000 && car.money <= 100000 && car.power <= 305 && car.brand =="FORD" }
+     - ```
+       My recommendation:
+        - CAR: Ford Mustang GTI 2015
+        - Price: 85 000 PLN
+        - Power: 305 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 170000 && car.power <= 450 && car.brand =="AUDI" }
+         - ```
+       My recommendation:
+        - CAR: Audi RS 4 2013
+        - Price: 170 000 PLN
+        - Power: 450 HP
+    ```
+- ELSEIF: ${  car.type == "sport" && car.money >= 130000 && car.money <= 200000 && car.power <= 412 && car.brand =="FORD" }
+     - ```
+       My recommendation:
+        - CAR: Ford Focus RS 2018
+        - Price: 130 000 PLN
+        - Power: 412 HP
+    ```
+>========================================================================================================
+> premium
+- ELSEIF: ${  car.type == "premium" && car.money >= 190000 && car.money <= 220000 && car.power <= 272 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Audi A6 2015 
+        - Price: 160 000 PLN
+        - Power: 272 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: BMW Seria 7 2016
+        - Price: 145 000 PLN
+        - Power: 408 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 280000 && car.money <= 310000 && car.power <= 258 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Mercedes-Benz S 350
+        - Price: 230 000 PLN
+        - Power: 258 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: BMW Seria 7 2017
+        - Price: 250 000 PLN
+        - Power: 326 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 450000 && car.power <= 420 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Mercedes-Benz G Class
+        - Price: 445 000 PLN
+        - Power: 585 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Lexus ls 2018
+        - Price: 410 000 PLN
+        - Power: 420 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 160000 && car.money <= 220000 && car.power <= 272 && car.brand =="AUDI" }
+         - ```
+       My recommendation:
+        - CAR: Audi A6 2015 
+        - Price: 160 000 PLN
+        - Power: 272 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 145000 && car.money <= 220000 && car.power <= 408 && car.brand =="BMW" }
+     - ```
+       My recommendation:
+        - CAR: BMW Seria 7 2016
+        - Price: 145 000 PLN
+        - Power: 408 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 230000 && car.money <= 310000 && car.power <= 258 && car.brand =="MERCEDES" }
+         - ```
+       My recommendation:
+        - CAR: Mercedes-Benz S 350
+        - Price: 230 000 PLN
+        - Power: 258 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 250000 && car.money <= 310000 && car.power <= 326 && car.brand =="BMW" }
+     - ```
+       My recommendation:
+        - CAR: BMW Seria 7 2017
+        - Price: 250 000 PLN
+        - Power: 326 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 445000 && car.power <= 585 && car.brand =="MERCEDES" }
+         - ```
+       My recommendation:
+        - CAR: Mercedes-Benz G Class
+        - Price: 445 000 PLN
+        - Power: 585 HP
+    ```
+- ELSEIF: ${  car.type == "premium" && car.money >= 410000 && car.power <= 420 && car.brand =="LEXUS" }
+     - ```
+       My recommendation:
+        - CAR: Lexus ls 2018
+        - Price: 410 000 PLN
+        - Power: 420 HP
+    ```
+>===========================================================================================================
+>family
+- ELSEIF: ${  car.type == "family" && car.money >= 30000 && car.money <= 40000 && car.power <= 125 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Honda Accord 2012
+        - Price: 28 000 PLN
+        - Power: 150 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Ford Focus 2013
+        - Price: 30 000 PLN
+        - Power: 125 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 55000 && car.money <= 65000 && car.power <= 144 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: NIssan Qashqai 2012
+        - Price: 38 000 PLN
+        - Power: 144 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Ford Mondeo 2017
+        - Price: 52 000 PLN
+        - Power: 180 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 70000 && car.power <= 155 && car.brand =="NULL" }
+         - ```
+       My recommendation:
+        - CAR: Honda CR-V 2016
+        - Price: 68 000 PLN
+        - Power: 155 HP
+    ```
+     - ```
+       My recommendation:
+        - CAR: Audi A4 Avant 2014
+        - Price: 62 000 PLN
+        - Power: 190 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 30000 && car.money <= 40000 && car.power <= 150 && car.brand =="HONDA" }
+         - ```
+       My recommendation:
+        - CAR: Honda Accord 2012
+        - Price: 28 000 PLN
+        - Power: 150 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 30000 && car.money <= 40000 && car.power <= 125 && car.brand =="FORD" }
+     - ```
+       My recommendation:
+        - CAR: Ford Focus 2013
+        - Price: 30 000 PLN
+        - Power: 125 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 38000 && car.money <= 65000 && car.power <= 144 && car.brand =="NISSAN" }
+         - ```
+       My recommendation:
+        - CAR: NIssan Qashqai 2012
+        - Price: 38 000 PLN
+        - Power: 144 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 55000 && car.money <= 65000 && car.power <= 180 && car.brand =="FORD" }
+     - ```
+       My recommendation:
+        - CAR: Ford Mondeo 2017
+        - Price: 52 000 PLN
+        - Power: 180 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 70000 && car.power <= 155 && car.brand =="HONDA" }
+         - ```
+       My recommendation:
+        - CAR: Honda CR-V 2016
+        - Price: 68 000 PLN
+        - Power: 155 HP
+    ```
+- ELSEIF: ${  car.type == "family" && car.money >= 70000 && car.power <= 190 && car.brand =="AUDI" }
+     - ```
+       My recommendation:
+        - CAR: Audi A4 Avant 2014
+        - Price: 62 000 PLN
+        - Power: 190 HP
+    ```
+- ELSE:
+    - Sorry, I haven't got recommendation for your requirements. Change it.
+    - There is no model for your requirements. Try set other requirements
+
+
+#seeDecision(car)
+    - ```
+        Your decision: 
+        - Type: ${car.type} car
+        - Money: ${car.money} PLN
+        - Min. power: ${car.power} HP
+        - Brand: ${car.brand}
+    ```

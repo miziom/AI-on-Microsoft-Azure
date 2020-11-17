@@ -1,0 +1,19 @@
+[import](common.lg)
+
+# SendActivity_GzZ5fe()
+- Ok, ${user.name}! Let's try to find car for you.
+# SendActivity_flUFUi()
+- ${seeDecision(user.car)}
+
+# SendActivity_NiwpP2()
+- - ${checkCar(user.car)}
+
+
+
+
+
+
+
+
+
+

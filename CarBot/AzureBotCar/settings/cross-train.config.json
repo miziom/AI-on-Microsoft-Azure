@@ -1,0 +1,34 @@
+{
+  "AzureBotCar.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "": [
+        "CustomGreeting.en-us"
+      ],
+      "SportCar": [],
+      "help": [],
+      "cancel": [],
+      "PremiumCar": [],
+      "CheckMyDecision": [],
+      "setMoney": [],
+      "setHorsePower": [],
+      "setBrand": [
+        "CarFinding.en-us",
+        "CarBrand.en-us"
+      ],
+      "setCarType": [],
+      "BrandAudi": [],
+      "BrandBMW": [],
+      "BrandHonda": [],
+      "BrandFord": [],
+      "NISSAN": [],
+      "findCar": [
+        "CarFinding.en-us"
+      ],
+      "BrandMercedes": [],
+      "BrandLexus": [],
+      "FamilyCar": [],
+      "sayThanks": []
+    }
+  }
+}

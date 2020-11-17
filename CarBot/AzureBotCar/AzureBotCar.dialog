@@ -1,0 +1,603 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "$designer": {
+      "name": "AzureBotCar",
+      "description": "",
+      "id": "enLdQx"
+    }
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720",
+        "name": "Bot"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "qmWgbl"
+          },
+          "activityProcessed": true,
+          "dialog": "CustomGreeting"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "gUY8og"
+          },
+          "activity": "${SendActivity_gUY8og()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "rjUezV",
+        "name": "SportCar"
+      },
+      "intent": "SportCar",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "MTdhcs"
+          },
+          "activity": "${SendActivity_MTdhcs()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "rz1vQu"
+          },
+          "property": "user.car.type",
+          "value": "sport"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "nBTxBr"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "TLWkpV"
+          },
+          "activity": "${SendActivity_TLWkpV()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Si5eHz",
+        "name": "help"
+      },
+      "intent": "help",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "73RWl9"
+          },
+          "activity": "${SendActivity_73RWl9()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "E6O8XL"
+          },
+          "activity": "${SendActivity_E6O8XL()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Cg8NJa",
+        "name": "cancel"
+      },
+      "intent": "cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "VIs3av"
+          },
+          "activity": "${SendActivity_VIs3av()}"
+        },
+        {
+          "$kind": "Microsoft.DeleteProperties",
+          "$designer": {
+            "id": "MdAcl4"
+          },
+          "properties": [
+            "user.car",
+            "user.decision.brand"
+          ]
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "sjMUYs"
+          },
+          "activityProcessed": true
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "5lwjKD",
+        "name": "PremiumCar"
+      },
+      "intent": "PremiumCar",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "tZyOm7"
+          },
+          "activity": "${SendActivity_tZyOm7()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "Iial46"
+          },
+          "property": "user.car.type",
+          "value": "premium"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "cTdur6",
+        "name": "CheckMyDecision"
+      },
+      "intent": "CheckMyDecision",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dEsvqw"
+          },
+          "activity": "${SendActivity_dEsvqw()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "rRR9Yo",
+        "name": "setMoney"
+      },
+      "intent": "setMoney",
+      "actions": [
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "aT1P63"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_aT1P63()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_aT1P63()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_aT1P63()}",
+          "defaultValueResponse": "",
+          "property": "user.car.money",
+          "validations": [
+            "int(this.value) != null"
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "KQ7in1"
+          },
+          "activity": "${SendActivity_KQ7in1()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "nK72xW",
+        "name": "setHorsePower"
+      },
+      "intent": "setHorsePower",
+      "actions": [
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "$designer": {
+            "id": "aCmHKF"
+          },
+          "property": "user.car.power"
+        },
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "OFTXdS"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_OFTXdS()}",
+          "unrecognizedPrompt": "${NumberInput_UnrecognizedPrompt_OFTXdS()}",
+          "invalidPrompt": "${NumberInput_InvalidPrompt_OFTXdS()}",
+          "defaultValueResponse": "",
+          "property": "user.car.power",
+          "validations": [
+            "int(this.value) != null",
+            "int(this.value) >= 70",
+            "int(this.value) <= 700"
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "rzIusF"
+          },
+          "activity": "${SendActivity_rzIusF()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "R04PVE",
+        "name": "setBrand"
+      },
+      "intent": "setBrand",
+      "actions": [
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "$designer": {
+            "id": "AxPtpo"
+          },
+          "property": "user.decision.brand"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "p6a8Zn"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${TextInput_Prompt_p6a8Zn()}",
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_p6a8Zn()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_p6a8Zn()}",
+          "defaultValueResponse": "",
+          "property": "user.decision.brand",
+          "outputFormat": "${toUpper(this.value)}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "AeLYbc"
+          },
+          "condition": "user.decision.brand == \"YES\"",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "8sPWTW"
+              },
+              "property": "user.car.brand",
+              "value": "NULL"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "2eHxyZ"
+              },
+              "activity": "${SendActivity_2eHxyZ()}"
+            },
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "fjrfrh"
+              },
+              "activityProcessed": true,
+              "dialog": "CarFinding"
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "80WOqy"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "ikaZp6"
+              },
+              "activity": "${SendActivity_ikaZp6()}"
+            },
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "q8caRy"
+              },
+              "activityProcessed": true,
+              "dialog": "CarBrand"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "c1qnTh",
+        "name": "setCarType"
+      },
+      "intent": "setCarType",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "ceNPBu"
+          },
+          "activity": "${SendActivity_ceNPBu()}"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "gGm8wj",
+        "name": "BrandAudi"
+      },
+      "intent": "BrandAudi",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "uch1cW"
+          },
+          "activity": "${SendActivity_uch1cW()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "D8LZ73"
+          },
+          "property": "user.car.brand",
+          "value": "AUDI"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "EPBYVr",
+        "name": "BrandBMW"
+      },
+      "intent": "BrandBMW",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "9kiIoW"
+          },
+          "activity": "${SendActivity_9kiIoW()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "eY1wYl"
+          },
+          "property": "user.car.brand",
+          "value": "BMW"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "u1GTHF",
+        "name": "BrandHonda"
+      },
+      "intent": "BrandHonda",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "DRmKYp"
+          },
+          "activity": "${SendActivity_DRmKYp()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "hxjCLz"
+          },
+          "property": "user.car.brand",
+          "value": "HONDA"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "PMlZKv",
+        "name": "BrandFord"
+      },
+      "intent": "BrandFord",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "c10g7R"
+          },
+          "activity": "${SendActivity_c10g7R()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "RezM5Z"
+          },
+          "property": "user.car.brand",
+          "value": "FORD"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "bplvPn",
+        "name": "BrandNissan"
+      },
+      "intent": "NISSAN",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "jTZrPy"
+          },
+          "activity": "${SendActivity_jTZrPy()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "kSZI90"
+          },
+          "property": "user.car.brand",
+          "value": "NISSAN"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "0cjkDz",
+        "name": "findCar"
+      },
+      "intent": "findCar",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "unFXPI"
+          },
+          "activityProcessed": true,
+          "dialog": "CarFinding"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "k7uu0q",
+        "name": "BrandMercedes"
+      },
+      "intent": "BrandMercedes",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "uBGGmC"
+          },
+          "activity": "${SendActivity_uBGGmC()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "yCeOmP"
+          },
+          "property": "user.car.brand",
+          "value": "MERCEDES"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "TUCcnD",
+        "name": "BrandLexus"
+      },
+      "intent": "BrandLexus",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dytKx1"
+          },
+          "activity": "${SendActivity_dytKx1()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "m9jyif"
+          },
+          "property": "user.car.brand",
+          "value": "LEXUS"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "o0FmYh",
+        "name": "FamilyCar"
+      },
+      "intent": "FamilyCar",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "hGdi2E"
+          },
+          "activity": "${SendActivity_hGdi2E()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "KFGsoM"
+          },
+          "property": "user.car.type",
+          "value": "family"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "X2qk4C",
+        "name": "sayThanks"
+      },
+      "intent": "sayThanks",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "bCWh4t"
+          },
+          "activity": "${SendActivity_bCWh4t()}"
+        }
+      ]
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
+  "generator": "AzureBotCar.lg",
+  "id": "AzureBotCar",
+  "recognizer": "AzureBotCar.lu.qna"
+}

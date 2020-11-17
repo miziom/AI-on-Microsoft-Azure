@@ -1,0 +1,173 @@
+
+> LUIS application information
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 3.2.0
+
+
+> # Intent definitions
+
+# SportCar
+- sport
+- sport car
+- fast
+- fast car
+- speed
+- speed car
+- performance
+- performance car
+
+
+# help
+- help
+- help me
+- what shoud I do
+- what to do
+- I do't know
+- I need help
+- please help
+- can you please help
+
+
+# cancel
+- cancel
+- clean
+- end
+
+
+# PremiumCar
+- premium
+- luxury
+- pro
+- exclusive
+- rich
+
+
+# CheckMyDecision
+- check
+- decisions
+- my deciosions
+- what i want
+- my car
+
+
+# setMoney
+- money
+- cash
+- pln
+- spend
+
+
+# setHorsePower
+- hp
+- power
+- set power
+- engine power
+- car power
+- horse power
+- horse
+
+
+# setBrand
+- brand
+- car brand
+
+
+# setCarType
+- car
+- car type
+- type
+
+
+# BrandAudi
+- audi
+- a3
+- a4
+- i want audi
+- give me audi
+
+
+# BrandBMW
+- bmw
+- i want bwm
+- give me bmw
+
+
+# BrandHonda
+- honda
+- i want honda
+- give me honda
+
+
+# BrandFord
+- ford
+- i want ford
+- give me ford
+
+
+# findCar
+- try
+- find
+- try to find
+- try find
+- show me car
+- recommend
+
+
+# BrandMercedes
+- mercedes
+- benz
+- mercedes-benz
+- merc
+- i want mercedes
+- i want benz
+- i want mercedes-benz
+- i want merc
+- give me mercedes
+- give me benz
+- give me mercedes-benz
+- give me merc
+
+
+# NISSAN
+- nissan
+- i want nissan
+- give me nissan
+
+
+# BrandLexus
+- lexus
+- i want lexus
+- give me lexus
+
+
+# FamilyCar
+- family
+- suv
+- normall
+- sedan
+- hatchback
+
+
+# sayThanks
+- thank you
+- thanks
+- good job
+- thanks for recommendation
+- good reccomendation
+
+
+> # Entity definitions
+
+
+> # PREBUILT Entity definitions
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+> # RegEx entities
+
+

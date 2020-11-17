@@ -1,0 +1,8 @@
+{
+    "luis": {
+        "AzureBotCar_en_us_lu": {
+            "appId": "c57d365f-6208-4206-99b6-9125c921a2ca",
+            "version": "0.9"
+        }
+    }
+}

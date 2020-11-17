@@ -1,0 +1,46 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "ZGiGPh",
+    "name": "CarFinding",
+    "description": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "A7Vtnw"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "GzZ5fe"
+          },
+          "activity": "${SendActivity_GzZ5fe()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "flUFUi"
+          },
+          "activity": "${SendActivity_flUFUi()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "NiwpP2"
+          },
+          "activity": "${SendActivity_NiwpP2()}"
+        }
+      ]
+    }
+  ],
+  "generator": "CarFinding.lg",
+  "recognizer": "CarFinding.lu.qna",
+  "id": "CarFinding"
+}
