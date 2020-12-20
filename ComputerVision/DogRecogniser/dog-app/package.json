@@ -1,0 +1,23 @@
+{
+  "name": "dog-app",
+  "productName": "dog-app",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": {
+    "name": "miziom",
+    "email": "mateusz1997-11@o2.pl"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "electron-squirrel-startup": "^1.0.0",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "electron": "^11.1.0"
+  }
+}

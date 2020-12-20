@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Dog Recogniser</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script type="text/javascript" src="predict.js"></script>
+
+  </head>
+
+  <body>
+  <form>
+    <img class="dog_img" src="assets/images/dog.jpg"/>
+    <h1>Welcome to <strong>dog breed classifier</strong></h1>
+    <div class="whitespace"></div>
+    <input type="button" id="select_button" value="Upload Image" />
+    <div id="previewImage"></div>
+    <div id="analysisResults"></div>
+  </form>
+  </body>
+
+</html>
