@@ -1,0 +1,14 @@
+azureml-sdk==1.20.0
+azureml-core==1.20.0
+azureml-automl-runtime==1.20.0
+azureml-core==1.20.0
+azureml-dataprep==2.7.3
+azureml-dataprep-native==27.0.0
+azureml-dataprep-rslex==1.5.0
+azureml-dataset-runtime==1.20.0
+azureml-defaults==1.20.0
+azureml-interpret==1.20.0
+azureml-pipeline-core==1.20.0
+azureml-telemetry==1.20.0
+azureml-train-automl-client==1.20.0
+azureml-train-automl-runtime==1.20.0.post1
